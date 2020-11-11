@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+}
+
+main .card:hover {
+  box-shadow: 0 0 15px #41AD49;
+}
+
+main .catalog-finmc {
+  max-height: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding: 40px;
+  padding-right: 30px;
+}
+
+main #ProductsCart .card:hover {
+  box-shadow: none;
+}
+
+main .gsweb-cart-info {
+  width: 100%;
+}
+
+main .gsweb-cart-info .cart-btn {
+  position: relative;
+}
+
+main .gsweb-cart-info .cart-btn .cart-art-count {
+  position: absolute;
+  top: 5px;
+  left: 62%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0 5px;
+  display: inline-block;
+  color: #ffffff;
+}
+
+main form {
+  padding: 20px;
+  padding-left: 30px;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "catalog_finmc",
+  "version": "1.0.0",
+  "description": "Catalog to finantial media corp. By Juan Jimenez",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "catalog",
+    "finmc",
+    "juanjimeneztj",
+    "juan",
+    "jimenez",
+    "sip"
+  ],
+  "author": "Juan Jimenez",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "bootstrap": "^4.5.3"
+  }
+}

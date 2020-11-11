@@ -1,0 +1,26 @@
+.gsweb-content::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.gsweb-content::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+
+.gsweb-content::-webkit-scrollbar-button:increment,
+.gsweb-content::-webkit-scrollbar-button {
+  display: none;
+}
+
+.gsweb-content::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.gsweb-content::-webkit-scrollbar-thumb {
+  background-color: #41AD49;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+
+.gsweb-content::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
