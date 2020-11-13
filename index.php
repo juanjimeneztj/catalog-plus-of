@@ -39,7 +39,7 @@
                                         <img src="images/example.png" class="card-img-top" alt="Example Product">
                                         <div class="card-body">
                                             <a href="#" class="btn-gsweb-add btn btn-primary d-block mb-2" data-id="<?=$articles?>">Add</a>
-                                            <a href="#" class="btn-gsweb-read-more btn btn-info d-block">Read More</a>
+                                            <a href="#" class="btn-gsweb-read-more btn btn-info d-block" data-toggle="modal" data-target="#ModalProdDescription">Read More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -404,6 +404,26 @@
             </div>
         </div>
     </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="ModalProdDescription" tabindex="-1" role="dialog" aria-labelledby="ModalProdDescriptionTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="ModalProdDescriptionTitle">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit unde nemo quibusdam quasi et, nostrum quam corrupti quo magnam sequi illum praesentium fugiat. Debitis incidunt necessitatibus nesciunt quo explicabo quis.</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+    </div>
 
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
     <script src="js/fn.juanjimeneztj.js" async></script>
