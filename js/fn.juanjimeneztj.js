@@ -1,4 +1,5 @@
-$('.btn-gsweb-add').click(function(){
+$('.btn-gsweb-add').click(function(e){
+    e.preventDefault();
     $(this).addClass('disabled');
     $('#ProductsCart').children().append('<p>'+$(this).parent().parent().find('.card-header').children().text()+'</p>');
     cardProds();
