@@ -1,0 +1,46 @@
+// ROOT STYLES
+@import 'root_color';
+
+// GENERAL STYLES
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+// MAIN STYLES
+main{
+    width: 100%;
+    & .card:hover{
+        box-shadow: 0 0 15px $primary;
+    }
+    & .catalog-finmc{
+        max-height: 100%;
+        overflow: hidden;
+        overflow-y: scroll;
+        padding: 40px;
+        padding-right: 30px;
+    }
+    & #ProductsCart .card:hover{
+        box-shadow: none;
+    }
+    & .gsweb-cart-info{
+        width: 100%;
+        & .cart-btn{
+            position: relative;
+            & .cart-art-count{
+                position: absolute;
+                top: 5px;
+                left: 62%;
+                transform: translateX(-50%);
+                font-size: 12px;
+                font-weight: bold;
+                padding: 0 5px;
+                display: inline-block;
+                color: $white;
+            }
+        }
+    }
+    & form{
+        padding: 20px;
+        padding-left: 30px;
+    }
+}
