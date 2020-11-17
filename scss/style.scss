@@ -12,12 +12,36 @@ main{
     & .card:hover{
         box-shadow: 0 0 15px $primary;
     }
+    & .prod-image{
+        height: auto;
+        margin: 0;
+        padding-top: 30px;
+        position: relative;
+        width: 100%;
+        & > img{
+            height: auto;
+            max-width: 200px;
+            width: 100%;
+        }
+    }
+    & .range-details{
+        color: $yellow;
+        padding-bottom: 0;
+        & > .fa-star{
+            font-weight: bold;
+        }
+        & .fa-star-half-alt{
+            display: none;
+        }
+    }
+    & .price-gsweb{
+        color: $cherry;
+        font-size: 20px;
+        font-weight: bold;
+    }
     & .catalog-finmc{
-        max-height: 100%;
-        overflow: hidden;
-        overflow-y: scroll;
         padding: 40px;
-        padding-right: 30px;
+        padding-right: 0;
     }
     & #ProductsCart .card:hover{
         box-shadow: none;
@@ -29,7 +53,7 @@ main{
             & .cart-art-count{
                 position: absolute;
                 top: 5px;
-                left: 62%;
+                left: 65%;
                 transform: translateX(-50%);
                 font-size: 12px;
                 font-weight: bold;

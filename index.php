@@ -30,20 +30,6 @@
                 <div class="col-12 col-md-9">
                     <div class="catalog-finmc gsweb-content">
                         <div class="row">
-                            <?php for ($articles = 1; $articles <= 12; $articles++) : ?>
-                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-5">
-                                    <div class="card text-center">
-                                        <div class="card-header bg-dark text-white text-uppercase">
-                                            <strong>Product Title #<?=$articles?></strong>
-                                        </div>
-                                        <img src="images/example.png" class="card-img-top" alt="Example Product">
-                                        <div class="card-body">
-                                            <a href="#" class="btn-gsweb-add btn btn-primary d-block mb-2" data-id="<?=$articles?>">Add</a>
-                                            <a href="#" class="btn-gsweb-read-more btn btn-info d-block" data-toggle="modal" data-target="#ModalProdDescription">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            <?php endfor; ?>
                         </div>
                     </div>
                 </div>
@@ -56,7 +42,7 @@
                             </button>
                             <div class="collapse" id="ProductsCart">
                                 <div class="card card-body">
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -407,25 +393,26 @@
 
     <!-- Modal -->
     <div class="modal fade" id="ModalProdDescription" tabindex="-1" role="dialog" aria-labelledby="ModalProdDescriptionTitle" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="ModalProdDescriptionTitle">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-            </button>
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalProdDescriptionTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit unde nemo quibusdam quasi et, nostrum quam corrupti quo magnam sequi illum praesentium fugiat. Debitis incidunt necessitatibus nesciunt quo explicabo quis.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit unde nemo quibusdam quasi et, nostrum quam corrupti quo magnam sequi illum praesentium fugiat. Debitis incidunt necessitatibus nesciunt quo explicabo quis.</p>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-        </div>
-    </div>
     </div>
 
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+    <script src="js/init.fn.juanjimeneztj.js"></script>
     <script src="js/fn.juanjimeneztj.js" async></script>
 </body>
 <!--End body-->
