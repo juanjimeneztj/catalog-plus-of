@@ -6260,7 +6260,7 @@ a.close.disabled {
 .modal-body {
   position: relative;
   flex: 1 1 auto;
-  padding: 1rem;
+  padding: 1rem 3rem 1rem 2rem;
 }
 
 .modal-footer {
@@ -6288,7 +6288,7 @@ a.close.disabled {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 500px;
+    max-width: 800px;
     margin: 11.75rem auto;
   }
 

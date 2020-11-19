@@ -66,8 +66,8 @@ $products = [
     ],
     [
         'id'           => 8,
-        'product_name' => 'Trade Services Unlimited',
-        'label'        => '1-Quarter (5 Only)',
+        'product_name' => 'Trade Services Unlimited 1-Quarter',
+        'label'        => '5 Only Available',
         'retail_price' => '4,999.00',
         'actual_price' => '2,750.00',
         'image'        => 'images/example.png',
@@ -76,7 +76,7 @@ $products = [
     [
         'id'           => 9,
         'product_name' => 'Roadmap 2021 Beta',
-        'label'        => '200 Only',
+        'label'        => 'Only 200 Available',
         'retail_price' => '4,500.00',
         'actual_price' => '457.00',
         'image'        => 'images/example.png',
@@ -94,7 +94,7 @@ $products = [
     [
         'id'           => 11,
         'product_name' => 'TGAS Lifetime VIP',
-        'label'        => '5 Only',
+        'label'        => 'Only 5 Available',
         'retail_price' => '5,999.00',
         'actual_price' => '347.00',
         'image'        => 'images/example.png',
@@ -112,7 +112,7 @@ $products = [
     [
         'id'           => 13,
         'product_name' => 'TradeRoom Lifetime VIP',
-        'label'        => '10 Only',
+        'label'        => 'Only 10 Available',
         'retail_price' => '5,000.00',
         'actual_price' => '1,499.00',
         'image'        => 'images/example.png',
@@ -156,8 +156,8 @@ $products = [
     ],
     [
         'id'           => 18,
-        'product_name' => 'Charlie&#39;s Option Room',
-        'label'        => '2-Year (Only 5)',
+        'product_name' => 'Charlie&#39;s Option Room 2-Year',
+        'label'        => 'Only 5 Available',
         'retail_price' => '7,992.00',
         'actual_price' => '5,000.00',
         'image'        => 'images/example.png',
@@ -165,8 +165,8 @@ $products = [
     ],
     [
         'id'           => 19,
-        'product_name' => 'Charlie&#39;s Option Room',
-        'label'        => '1-Year (Only 10)',
+        'product_name' => 'Charlie&#39;s Option Room 1-Year',
+        'label'        => 'Only 10 Available',
         'retail_price' => '3,996.00',
         'actual_price' => '2,950.00',
         'image'        => 'images/example.png',
@@ -174,8 +174,8 @@ $products = [
     ],
     [
         'id'           => 20,
-        'product_name' => 'TBUZ/TSPY',
-        'label'        => 'Combo 1 Year',
+        'product_name' => 'TBUZ/TSPY Combo',
+        'label'        => '1 Year',
         'retail_price' => '8,550.00',
         'actual_price' => '1,500.00',
         'image'        => 'images/example.png',
@@ -183,8 +183,8 @@ $products = [
     ],
     [
         'id'           => 21,
-        'product_name' => 'TBUZ/TSPY',
-        'label'        => 'Combo 3 Year',
+        'product_name' => 'TBUZ/TSPY Combo',
+        'label'        => '3 Year',
         'retail_price' => '8,550.00',
         'actual_price' => '3,400.00',
         'image'        => 'images/example.png',
@@ -228,8 +228,8 @@ $products = [
     ],
     [
         'id'           => 26,
-        'product_name' => 'Trade-A-Thon Lifetime',
-        'label'        => '',
+        'product_name' => 'Trade-A-Thon',
+        'label'        => 'Lifetime',
         'retail_price' => '749.00',
         'actual_price' => '2,499.00',
         'image'        => 'images/example.png',
@@ -238,7 +238,7 @@ $products = [
     [
         'id'           => 27,
         'product_name' => 'Sawgrass Workshop',
-        'label'        => 'Only 10',
+        'label'        => 'Only 10 Available',
         'retail_price' => '2,499.00',
         'actual_price' => '1,000.00',
         'image'        => 'images/example.png',

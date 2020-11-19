@@ -16,7 +16,18 @@ $('body').on('click','.btn-gsweb-add',function(e){
 $('body').on('click','.btn-gsweb-read-more',function(e){
     e.preventDefault();
     $('#ModalProdDescriptionTitle').text($(this).parent().find('.title-gsweb').text());
-    $('.modal-body').html($(this).parent().find('.description-gsweb').text());
+    $('.modal-body').html(`
+            <div class="row justify-content-center">
+                <div class="col-7 col-md-3">
+                    <figure>
+                        <img class="img-fluid" src="`+$(this).parent().parent().find('img').attr('src')+`" />
+                    </figure>
+                </div>
+                <div class="col-12 col-md">
+                    `+$(this).parent().find('.description-gsweb').text()+`
+                </div>
+            </div>
+        `);
     $('#ModalProdDescription').find('#addProdModalBtn').attr('data-id',$(this).attr('data-id'));
     // .replace(/ /g, "")
     if($(this).parent().find('.btn-gsweb-add').hasClass('disabled')){
