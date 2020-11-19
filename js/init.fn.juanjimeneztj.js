@@ -18,8 +18,8 @@ function initGSWEB(){
                     $name = element.product_name;
                 }
             }else{
-                if(element.product_name.length > 35){
-                    $name = element.product_name.substr(0,35)+'...';
+                if(element.product_name.length > 30){
+                    $name = element.product_name.substr(0,26)+'...';
                 }else{
                     $name = element.product_name;
                 }
@@ -27,7 +27,7 @@ function initGSWEB(){
             templateProducts.querySelector('img').setAttribute('src',element.image);
             templateProducts.querySelector('img').setAttribute('alt',element.product_name);
             templateProducts.querySelector('.title-gsweb').setAttribute('title',element.product_name);
-            templateProducts.querySelector('.title-gsweb strong').textContent = $name;
+            templateProducts.querySelector('.title-gsweb strong').innerHTML = $name;
             templateProducts.querySelector('.price-gsweb').textContent = '$'+element.actual_price+' USD';
             templateProducts.querySelector('.description-gsweb').innerHTML = element.description;
             templateProducts.querySelector('.btn-gsweb-add').setAttribute('data-id',element.id);
