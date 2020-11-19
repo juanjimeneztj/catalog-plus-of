@@ -36,6 +36,9 @@
                             <template id="template-product">
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 mb-5">
                                     <div class="card text-center">
+                                        <div class="ribbon-wrapper-red">
+                                            <div class="ribbon-red">1-Year</div>
+                                        </div>
                                         <figure class="prod-image">
                                             <img src="${element.image}" alt="${element.product_name}" />
                                         </figure>

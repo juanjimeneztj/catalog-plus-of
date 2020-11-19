@@ -24,6 +24,12 @@ function initGSWEB(){
                     $name = element.product_name;
                 }
             }
+            if(element.label == ''){
+                templateProducts.querySelector('.ribbon-wrapper-red').classList.add('d-none');
+            }else{
+                templateProducts.querySelector('.ribbon-wrapper-red').classList.remove('d-none');
+                templateProducts.querySelector('.ribbon-wrapper-red .ribbon-red').textContent = element.label;
+            }
             templateProducts.querySelector('img').setAttribute('src',element.image);
             templateProducts.querySelector('img').setAttribute('alt',element.product_name);
             templateProducts.querySelector('.title-gsweb').setAttribute('title',element.product_name);

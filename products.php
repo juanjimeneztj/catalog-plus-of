@@ -4,6 +4,7 @@ $products = [
     [
         'id'           => 1,
         'product_name' => 'TBUZ',
+        'label'        => '',
         'retail_price' => '',
         'actual_price' => '0.00',
         'image'        => 'images/TBUZ.png',
@@ -12,6 +13,7 @@ $products = [
     [
         'id'           => 2,
         'product_name' => 'TSPY',
+        'label'        => '',
         'retail_price' => '',
         'actual_price' => '0.00',
         'image'        => 'images/TSPY.png',
@@ -20,6 +22,7 @@ $products = [
     [
         'id'           => 3,
         'product_name' => 'High Noon Swing Trade Alerts',
+        'label'        => '',
         'retail_price' => '',
         'actual_price' => '0.00',
         'image'        => 'images/HighNoon.png',
@@ -28,6 +31,7 @@ $products = [
     [
         'id'           => 4,
         'product_name' => 'TCASH',
+        'label'        => '',
         'retail_price' => '',
         'actual_price' => '0.00',
         'image'        => 'images/TCASH.png',
@@ -36,6 +40,7 @@ $products = [
     [
         'id'           => 5,
         'product_name' => '24-Hour Global TradeRoom',
+        'label'        => '',
         'retail_price' => '',
         'actual_price' => '0.00',
         'image'        => 'images/24HourGlobalTradeRoom.png',
@@ -44,6 +49,7 @@ $products = [
     [
         'id'           => 6,
         'product_name' => 'Trade of the Day with TGAS',
+        'label'        => '',
         'retail_price' => '',
         'actual_price' => '0.00',
         'image'        => 'images/TradeOfTheDay.png',
@@ -52,6 +58,7 @@ $products = [
     [
         'id'           => 7,
         'product_name' => 'TPASS',
+        'label'        => '',
         'retail_price' => '22,500.00',
         'actual_price' => '5,500.00',
         'image'        => 'images/example.png',
@@ -59,7 +66,8 @@ $products = [
     ],
     [
         'id'           => 8,
-        'product_name' => 'Trade Services Unlimited 1-Quarter (5 Only)',
+        'product_name' => 'Trade Services Unlimited',
+        'label'        => '1-Quarter (5 Only)',
         'retail_price' => '4,999.00',
         'actual_price' => '2,750.00',
         'image'        => 'images/example.png',
@@ -67,7 +75,8 @@ $products = [
     ],
     [
         'id'           => 9,
-        'product_name' => 'Roadmap 2021 Beta (200 Only)',
+        'product_name' => 'Roadmap 2021 Beta',
+        'label'        => '200 Only',
         'retail_price' => '4,500.00',
         'actual_price' => '457.00',
         'image'        => 'images/example.png',
@@ -75,7 +84,8 @@ $products = [
     ],
     [
         'id'           => 10,
-        'product_name' => 'Roadmap and TradeRoom success package 2 Years',
+        'product_name' => 'Roadmap and TradeRoom success package',
+        'label'        => '2 Years',
         'retail_price' => '4,500.00',
         'actual_price' => '997.00',
         'image'        => 'images/example.png',
@@ -83,7 +93,8 @@ $products = [
     ],
     [
         'id'           => 11,
-        'product_name' => 'TGAS Lifetime VIP (5 Only)',
+        'product_name' => 'TGAS Lifetime VIP',
+        'label'        => '5 Only',
         'retail_price' => '5,999.00',
         'actual_price' => '347.00',
         'image'        => 'images/example.png',
@@ -91,7 +102,8 @@ $products = [
     ],
     [
         'id'           => 12,
-        'product_name' => 'TGAS 1-Year',
+        'product_name' => 'TGAS',
+        'label'        => '1-Year',
         'retail_price' => '999.00',
         'actual_price' => '97.00',
         'image'        => 'images/example.png',
@@ -99,7 +111,8 @@ $products = [
     ],
     [
         'id'           => 13,
-        'product_name' => 'TradeRoom Lifetime VIP (10 Only)',
+        'product_name' => 'TradeRoom Lifetime VIP',
+        'label'        => '10 Only',
         'retail_price' => '5,000.00',
         'actual_price' => '1,499.00',
         'image'        => 'images/example.png',
@@ -107,7 +120,8 @@ $products = [
     ],
     [
         'id'           => 14,
-        'product_name' => 'TradeRoom 1-Year',
+        'product_name' => 'TradeRoom',
+        'label'        => '1-Year',
         'retail_price' => '999.00',
         'actual_price' => '449.00',
         'image'        => 'images/example.png',
@@ -116,6 +130,7 @@ $products = [
     [
         'id'           => 15,
         'product_name' => 'TCASH',
+        'label'        => '',
         'retail_price' => '',
         'actual_price' => '1,500.00',
         'image'        => 'images/example.png',
@@ -124,6 +139,7 @@ $products = [
     [
         'id'           => 16,
         'product_name' => 'High Noon',
+        'label'        => '',
         'retail_price' => '',
         'actual_price' => '1,000.00',
         'image'        => 'images/example.png',
@@ -131,7 +147,8 @@ $products = [
     ],
     [
         'id'           => 17,
-        'product_name' => 'TBB 2 Year',
+        'product_name' => 'TBB',
+        'label'        => '2 Year',
         'retail_price' => '',
         'actual_price' => '1,500.00',
         'image'        => 'images/example.png',
@@ -139,7 +156,8 @@ $products = [
     ],
     [
         'id'           => 18,
-        'product_name' => 'Charlie&#39;s Option Room 2-Year (Only 5)',
+        'product_name' => 'Charlie&#39;s Option Room',
+        'label'        => '2-Year (Only 5)',
         'retail_price' => '7,992.00',
         'actual_price' => '5,000.00',
         'image'        => 'images/example.png',
@@ -147,7 +165,8 @@ $products = [
     ],
     [
         'id'           => 19,
-        'product_name' => 'Charlie&#39;s Option Room 1-Year (Only 10)',
+        'product_name' => 'Charlie&#39;s Option Room',
+        'label'        => '1-Year (Only 10)',
         'retail_price' => '3,996.00',
         'actual_price' => '2,950.00',
         'image'        => 'images/example.png',
@@ -155,7 +174,8 @@ $products = [
     ],
     [
         'id'           => 20,
-        'product_name' => 'TBUZ/TSPY Combo 1 Year',
+        'product_name' => 'TBUZ/TSPY',
+        'label'        => 'Combo 1 Year',
         'retail_price' => '8,550.00',
         'actual_price' => '1,500.00',
         'image'        => 'images/example.png',
@@ -163,7 +183,8 @@ $products = [
     ],
     [
         'id'           => 21,
-        'product_name' => 'TBUZ/TSPY Combo 3 Year',
+        'product_name' => 'TBUZ/TSPY',
+        'label'        => 'Combo 3 Year',
         'retail_price' => '8,550.00',
         'actual_price' => '3,400.00',
         'image'        => 'images/example.png',
@@ -171,7 +192,8 @@ $products = [
     ],
     [
         'id'           => 22,
-        'product_name' => 'TBUZ 1 Year',
+        'product_name' => 'TBUZ',
+        'label'        => '1 Year',
         'retail_price' => '2,850.00',
         'actual_price' => '1,699.00',
         'image'        => 'images/example.png',
@@ -179,7 +201,8 @@ $products = [
     ],
     [
         'id'           => 23,
-        'product_name' => 'TSPY Pro 3-Year',
+        'product_name' => 'TSPY Pro',
+        'label'        => '3-Year',
         'retail_price' => '8,550.00',
         'actual_price' => '3,949.00',
         'image'        => 'images/example.png',
@@ -187,7 +210,8 @@ $products = [
     ],
     [
         'id'           => 24,
-        'product_name' => 'TSPY Pro 1-Year',
+        'product_name' => 'TSPY Pro',
+        'label'        => '1-Year',
         'retail_price' => '2,850.00',
         'actual_price' => '1,699.00',
         'image'        => 'images/example.png',
@@ -195,7 +219,8 @@ $products = [
     ],
     [
         'id'           => 25,
-        'product_name' => 'Trade-A-Thon 1-Year',
+        'product_name' => 'Trade-A-Thon',
+        'label'        => '1-Year',
         'retail_price' => '2,499.00',
         'actual_price' => '1,500.00',
         'image'        => 'images/example.png',
@@ -204,6 +229,7 @@ $products = [
     [
         'id'           => 26,
         'product_name' => 'Trade-A-Thon Lifetime',
+        'label'        => '',
         'retail_price' => '749.00',
         'actual_price' => '2,499.00',
         'image'        => 'images/example.png',
@@ -211,7 +237,8 @@ $products = [
     ],
     [
         'id'           => 27,
-        'product_name' => 'Sawgrass Workshop (Only 10)',
+        'product_name' => 'Sawgrass Workshop',
+        'label'        => 'Only 10',
         'retail_price' => '2,499.00',
         'actual_price' => '1,000.00',
         'image'        => 'images/example.png',
@@ -220,6 +247,7 @@ $products = [
     [
         'id'           => 28,
         'product_name' => '(EOT) Encyclopedia of Trading',
+        'label'        => '',
         'retail_price' => '999.00',
         'actual_price' => '497.00',
         'image'        => 'images/example.png',
