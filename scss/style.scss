@@ -65,6 +65,9 @@ main{
     }
     & .gsweb-cart-info{
         width: 100%;
+        & .card.card-body{
+            padding-top: 0;
+        }
         & .cart-btn{
             position: relative;
             & .cart-art-count{

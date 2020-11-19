@@ -17,39 +17,25 @@ function initGSWEB(){
                 }else{
                     $name = element.product_name;
                 }
-
-                templateProducts.querySelector('img').setAttribute('src',element.image);
-                templateProducts.querySelector('img').setAttribute('alt',element.product_name);
-                templateProducts.querySelector('.title-gsweb').setAttribute('title',element.product_name);
-                templateProducts.querySelector('.title-gsweb strong').textContent = $name;
-                templateProducts.querySelector('.price-gsweb').textContent = '$'+element.actual_price+' USD';
-                templateProducts.querySelector('.description-gsweb').textContent = element.description;
-                templateProducts.querySelector('.btn-gsweb-add').setAttribute('data-id',element.id);
-                templateProducts.querySelector('.btn-gsweb-read-more').setAttribute('data-id',element.id);
-
-                const clone = templateProducts.cloneNode(true);
-
-                fragment.appendChild(clone);
             }else{
                 if(element.product_name.length > 35){
                     $name = element.product_name.substr(0,35)+'...';
                 }else{
                     $name = element.product_name;
                 }
-
-                templateProducts.querySelector('img').setAttribute('src',element.image);
-                templateProducts.querySelector('img').setAttribute('alt',element.product_name);
-                templateProducts.querySelector('.title-gsweb').setAttribute('title',element.product_name);
-                templateProducts.querySelector('.title-gsweb strong').textContent = $name;
-                templateProducts.querySelector('.price-gsweb').textContent = '$'+element.actual_price+' USD';
-                templateProducts.querySelector('.description-gsweb').textContent = element.description;
-                templateProducts.querySelector('.btn-gsweb-add').setAttribute('data-id',element.id);
-                templateProducts.querySelector('.btn-gsweb-read-more').setAttribute('data-id',element.id);
-
-                const clone = templateProducts.cloneNode(true);
-
-                fragment.appendChild(clone);
             }
+            templateProducts.querySelector('img').setAttribute('src',element.image);
+            templateProducts.querySelector('img').setAttribute('alt',element.product_name);
+            templateProducts.querySelector('.title-gsweb').setAttribute('title',element.product_name);
+            templateProducts.querySelector('.title-gsweb strong').textContent = $name;
+            templateProducts.querySelector('.price-gsweb').textContent = '$'+element.actual_price+' USD';
+            templateProducts.querySelector('.description-gsweb').innerHTML = element.description;
+            templateProducts.querySelector('.btn-gsweb-add').setAttribute('data-id',element.id);
+            templateProducts.querySelector('.btn-gsweb-read-more').setAttribute('data-id',element.id);
+
+            const clone = templateProducts.cloneNode(true);
+
+            fragment.appendChild(clone);
             $catalog.append(fragment);
         });
     });

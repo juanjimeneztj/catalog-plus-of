@@ -86,7 +86,7 @@
                                                     <tr>
                                                         <th scope="row" class="name text-left">1</th>
                                                         <td class="opt text-right">
-                                                            <a href="javascript:void(0)" class="btn btn-sm btn-danger">X</a>
+                                                            <a href="javascript:void(0)" class="btn btn-sm btn-danger removeProductCart">X</a>
                                                         </td>
                                                     </tr>
                                                 </template>
@@ -455,7 +455,7 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit unde nemo quibusdam quasi et, nostrum quam corrupti quo magnam sequi illum praesentium fugiat. Debitis incidunt necessitatibus nesciunt quo explicabo quis.</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-id="0" id="addProdModalBtn">Add to Cart</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" data-id="0" id="addProdModalBtn">Add to Cart</button>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
                 </div>
             </div>

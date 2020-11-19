@@ -15,7 +15,7 @@ $products = [
         'retail_price' => '',
         'actual_price' => '0.00',
         'image'        => 'images/TSPY.png',
-        'description'  => 'Simple. Effective. Profitable. Tom Busby&#39;s T-SPY Pro offers you a trade service dedicated solely to trading just the SPY S&P 500 ETF.' 
+        'description'  => '&lt;p&gt;Simple. Effective. Profitable. Tom Busby&#39;s T-SPY Pro offers you a trade service dedicated solely to trading just the SPY S&P 500 ETF.&lt;/p&gt;' 
     ],
     [
         'id'           => 3,
@@ -23,7 +23,7 @@ $products = [
         'retail_price' => '',
         'actual_price' => '0.00',
         'image'        => 'images/HighNoon.png',
-        'description'  => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus felis justo, volutpat ut nibh ac, laoreet egestas mauris. Etiam tempor lacinia neque. Maecenas euismod pharetra neque. Aliquam erat sapien, scelerisque et ullamcorper sit amet, convallis eu ante. In rhoncus aliquet est, vel sagittis sapien efficitur eget. Aliquam pharetra, sapien nec posuere venenatis, felis ipsum tristique ex, ut molestie odio erat eu dui. Suspendisse quis leo orci.' 
+        'description'  => '&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus felis justo, volutpat ut nibh ac, laoreet egestas mauris. Etiam tempor lacinia neque. Maecenas euismod pharetra neque. Aliquam erat sapien, scelerisque et ullamcorper sit amet, convallis eu ante. In rhoncus aliquet est, vel sagittis sapien efficitur eget. Aliquam pharetra, sapien nec posuere venenatis, felis ipsum tristique ex, ut molestie odio erat eu dui. Suspendisse quis leo orci.&lt;/p&gt;' 
     ],
     [
         'id'           => 4,
@@ -31,7 +31,7 @@ $products = [
         'retail_price' => '',
         'actual_price' => '0.00',
         'image'        => 'images/TCASH.png',
-        'description'  => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus felis justo, volutpat ut nibh ac, laoreet egestas mauris. Etiam tempor lacinia neque. Maecenas euismod pharetra neque. Aliquam erat sapien, scelerisque et ullamcorper sit amet, convallis eu ante. In rhoncus aliquet est, vel sagittis sapien efficitur eget. Aliquam pharetra, sapien nec posuere venenatis, felis ipsum tristique ex, ut molestie odio erat eu dui. Suspendisse quis leo orci.' 
+        'description'  => '&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus felis justo, volutpat ut nibh ac, laoreet egestas mauris. Etiam tempor lacinia neque. Maecenas euismod pharetra neque. Aliquam erat sapien, scelerisque et ullamcorper sit amet, convallis eu ante. In rhoncus aliquet est, vel sagittis sapien efficitur eget. Aliquam pharetra, sapien nec posuere venenatis, felis ipsum tristique ex, ut molestie odio erat eu dui. Suspendisse quis leo orci.&lt;/p&gt;' 
     ],
     [
         'id'           => 5,
@@ -39,7 +39,7 @@ $products = [
         'retail_price' => '',
         'actual_price' => '0.00',
         'image'        => 'images/24HourGlobalTradeRoom.png',
-        'description'  => 'The DTI Traderoom is a community unlike any other, open 24 / 5 and nothing but like-minding traders showing up to communicate, elaborate together and make money.' 
+        'description'  => '&lt;p&gt;The DTI Traderoom is a community unlike any other, open 24 / 5 and nothing but like-minding traders showing up to communicate, elaborate together and make money.&lt;/p&gt;' 
     ],
     [
         'id'           => 6,
@@ -47,7 +47,7 @@ $products = [
         'retail_price' => '',
         'actual_price' => '0.00',
         'image'        => 'images/TradeOfTheDay.png',
-        'description'  => 'Tom Busby mentored DTI&#39;s Chief Instructor Geof Smith into the trader he is today. So it makes sense for Geof to run a trade service of his own. With a focus on swing trading stock options and special bonus trades on commodity futures (Geof&#39;s bread and butter trading!), you get actionable daily insights to set orders and create a watch list full of seasonally strong trade ideas.' 
+        'description'  => '&lt;p&gt;Tom Busby mentored DTI&#39;s Chief Instructor Geof Smith into the trader he is today. So it makes sense for Geof to run a trade service of his own. With a focus on swing trading stock options and special bonus trades on commodity futures (Geof&#39;s bread and butter trading!), you get actionable daily insights to set orders and create a watch list full of seasonally strong trade ideas.&lt;/p&gt;' 
     ]
 ];
 

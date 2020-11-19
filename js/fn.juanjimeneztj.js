@@ -46,6 +46,20 @@ $('body').on('click','#addProdModalBtn',function(e){
     cardProds();
 });
 
+$('body').on('click','.removeProductCart',function(e){
+    e.preventDefault();
+    let ID = $(this).attr('data-id');
+    $(this).parent().parent().remove();
+
+    $('.card').each(function(ele){
+        if($(this).find('.btn-gsweb-add').attr('data-id')==ID){
+            $(this).find('.btn-gsweb-add').removeClass('disabled').attr('disabled',false);
+        }
+    });
+
+    cardProds();
+});
+
 function cardProds(){
     $('.cart-art-count').text(
         $('#ProductsCart').find('tbody').children('tr').size()

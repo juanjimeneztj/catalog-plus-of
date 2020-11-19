@@ -46,6 +46,8 @@ main {
     box-shadow: none; }
   main .gsweb-cart-info {
     width: 100%; }
+    main .gsweb-cart-info .card.card-body {
+      padding-top: 0; }
     main .gsweb-cart-info .cart-btn {
       position: relative; }
       main .gsweb-cart-info .cart-btn .cart-art-count {
