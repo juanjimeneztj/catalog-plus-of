@@ -27,13 +27,16 @@
     <main>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 col-md-9">
+                <div class="col-12 col-md-7 col-lg-9 pl-0 pr-0">
+                    <div class="gsweb-banner">
+                        <img src="images/logo.png" alt="Logo">
+                    </div>
                     <div class="catalog-finmc gsweb-content">
                         <div class="row">
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-5 col-lg-3 bl-1">
                     <form>
                         <div class="gsweb-cart-info text-center mt-0 mb-4">
                             <button type="button" class="btn btn-outline-primary btn-block rounded-0 cart-btn" data-toggle="collapse" data-target="#ProductsCart" aria-expanded="false" aria-controls="ProductsCart">
@@ -396,7 +399,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="ModalProdDescriptionTitle">Modal title</h5>
+                    <h3 class="modal-title" id="ModalProdDescriptionTitle">Modal title</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -405,7 +408,8 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit unde nemo quibusdam quasi et, nostrum quam corrupti quo magnam sequi illum praesentium fugiat. Debitis incidunt necessitatibus nesciunt quo explicabo quis.</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-id="0" id="addProdModalBtn">Add to Cart</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
                 </div>
             </div>
         </div>

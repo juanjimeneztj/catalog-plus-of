@@ -6234,7 +6234,7 @@ a.close.disabled {
 }
 
 .modal-backdrop.show {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .modal-header {
@@ -6289,7 +6289,7 @@ a.close.disabled {
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: 500px;
-    margin: 1.75rem auto;
+    margin: 11.75rem auto;
   }
 
   .modal-dialog-scrollable {

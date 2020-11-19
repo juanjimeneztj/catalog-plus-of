@@ -1,10 +1,13 @@
 *, *::before, *::after {
   box-sizing: border-box; }
 
+.bl-1 {
+  border-left: 1px solid #cecece; }
+
 main {
   width: 100%; }
   main .card:hover {
-    box-shadow: 0 0 15px #41AD49; }
+    box-shadow: 0 0 5px #41AD49; }
   main .prod-image {
     height: auto;
     margin: 0;
@@ -26,9 +29,19 @@ main {
     color: #b12704;
     font-size: 20px;
     font-weight: bold; }
+  main .gsweb-banner {
+    background-image: url("../images/banner.png");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    width: 100%; }
+    main .gsweb-banner > img {
+      height: auto;
+      margin: 50px 0 -60px;
+      max-width: 260px;
+      width: 100%; }
   main .catalog-finmc {
-    padding: 40px;
-    padding-right: 0; }
+    padding: 100px 30px 30px; }
   main #ProductsCart .card:hover {
     box-shadow: none; }
   main .gsweb-cart-info {
@@ -47,4 +60,8 @@ main {
         color: #ffffff; }
   main form {
     padding: 20px;
-    padding-left: 30px; }
+    padding-left: 10px; }
+
+.modal-body, .modal-body p, .modal-body a, .modal-body li {
+  font-size: 19px;
+  line-height: 30px; }

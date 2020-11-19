@@ -5,12 +5,15 @@
 *,*::before,*::after{
     box-sizing: border-box;
 }
+.bl-1{
+    border-left: 1px solid #cecece;
+}
 
 // MAIN STYLES
 main{
     width: 100%;
     & .card:hover{
-        box-shadow: 0 0 15px $primary;
+        box-shadow: 0 0 5px $primary;
     }
     & .prod-image{
         height: auto;
@@ -39,9 +42,23 @@ main{
         font-size: 20px;
         font-weight: bold;
     }
+    & .gsweb-banner{
+        background:{
+            image: url('../images/banner.png');
+            position: center;
+            size: cover;
+        }
+        text-align: center;
+        width: 100%;
+        & > img{
+            height: auto;
+            margin: 50px 0 -60px;
+            max-width: 260px;
+            width: 100%;
+        }
+    }
     & .catalog-finmc{
-        padding: 40px;
-        padding-right: 0;
+        padding: 100px 30px 30px;
     }
     & #ProductsCart .card:hover{
         box-shadow: none;
@@ -65,6 +82,11 @@ main{
     }
     & form{
         padding: 20px;
-        padding-left: 30px;
+        padding-left: 10px;
     }
+}
+
+.modal-body,.modal-body p,.modal-body a,.modal-body li{
+    font-size: 19px;
+    line-height: 30px;
 }
