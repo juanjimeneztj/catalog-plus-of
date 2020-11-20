@@ -55,6 +55,7 @@
                                                 <i class="fas fa-star"></i>
                                                 <i class="fas fa-star-half-alt"></i>
                                             </div>
+                                            <p class="text-left text-info mb-0"><small><s class="retail-price">$0.00</s></small></p>
                                             <div class="price-gsweb text-left mb-4">$${element.actual_price} USD</div>
                                             <div class="description-gsweb d-none">${element.description}</div>
                 

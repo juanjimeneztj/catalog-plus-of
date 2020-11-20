@@ -25,6 +25,8 @@ main {
       font-weight: bold; }
     main .range-details .fa-star-half-alt {
       display: none; }
+  main .retail-price {
+    color: var(--gray); }
   main .price-gsweb {
     color: #b12704;
     font-size: 20px;

@@ -37,6 +37,9 @@ main{
             display: none;
         }
     }
+    & .retail-price{
+        color: var(--gray);
+    }
     & .price-gsweb{
         color: $cherry;
         font-size: 20px;

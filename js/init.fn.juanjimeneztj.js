@@ -43,6 +43,11 @@ function initGSWEB(){
                 templateProducts.querySelector('.title-gsweb').setAttribute('title',element.product_name+' - '+element.label);
             }
             templateProducts.querySelector('.title-gsweb strong').innerHTML = $name;
+            if(element.retail_price == ''){
+                templateProducts.querySelector('.retail-price').innerHTML = '&nbsp;';
+            }else{
+                templateProducts.querySelector('.retail-price').textContent = '$'+element.retail_price;
+            }
             templateProducts.querySelector('.price-gsweb').textContent = '$'+element.actual_price+' USD';
             templateProducts.querySelector('.description-gsweb').innerHTML = element.description;
             templateProducts.querySelector('.btn-gsweb-add').setAttribute('data-id',element.id);
