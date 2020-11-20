@@ -85,6 +85,10 @@ $('body').on('click','.removeProductCart',function(e){
     cardProds();
     allin();
 });
+$('body').on('click','#hidegetOfferModalBtn',function(e){
+    e.preventDefault();
+    $('#ModalProdOffer').removeClass('active');
+});
 
 function cardProds(){
     $('.cart-art-count').text(
@@ -96,21 +100,48 @@ function allin(){
     let tv = window.tprice;
     let cp = window.currentPrice;
     let mp = parseFloat(window.tprice)*0.50;
+    let offP = parseFloat(window.tprice)-3000;
     var number_format = function(total) { 
         return total.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,'); 
     };
 
     if(cp>=mp){
-        console.log('mitad de precio alcanzado');
+        if(window.msh < 1){
+            $('#ModalProdOffer').addClass('active');
+            window.msh = 1;
+        }
+    }else{
+        window.msh = 0;
     }
     if(cp > 999){
         $('#ttprice').text('$'+number_format(cp));
     }else{
         $('#ttprice').text('$'+number_format(cp));
     }
+    
+    window.diffprice = parseFloat(offP) - parseFloat(cp);
+    $('#diffP').text('$'+number_format(parseFloat(window.diffprice)));
 
     $('#totalp').attr('value',cp)
 
+    if(window.msh == 1){
+        if($('.gsweb-cart-info').find('.gsweb-special-offer').length < 1){
+            const fragment = document.createDocumentFragment();
+            const templateProducts = document.querySelector('#template-offer').content;
+
+            templateProducts.querySelector('.priceDisc').textContent = '$'+number_format(parseFloat(window.diffprice));
+            templateProducts.querySelector('.priceTotal').textContent = '$'+number_format(parseFloat(tv));
+
+            const clone = templateProducts.cloneNode(true);
+            fragment.appendChild(clone);
+            $('.gsweb-cart-info').append(fragment);
+        }else{
+            document.querySelector('.priceDisc').textContent = '$'+number_format(parseFloat(window.diffprice));
+            document.querySelector('.priceTotal').textContent = '$'+number_format(parseFloat(tv))
+        }
+    }else{
+        $('.gsweb-cart-info').find('.gsweb-special-offer').remove();
+    }
 }
 
 $('.goup').on('click',function(){

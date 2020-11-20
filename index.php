@@ -101,6 +101,12 @@
                                     </div>
                                 </div>
                             </div>
+                            <template id="template-offer">
+                                <div class="gsweb-special-offer mt-3">
+                                    <h5><strong><em>For only <span class="priceDisc">$0.00</span> more you can get ALL DTI trading education - <span class="text-danger">a </span><span class="priceTotal text-danger">$0.00</span><span class="text-danger"> value!</span></em></strong></h5>
+                                    <a href="javascript:void(0)">CLICK HERE TO TAKE THIS SPECIAL OFFER</a>
+                                </div>
+                            </template>
                         </div>
                         <p class="mt-1"><strong>Contact Information</strong></p>
 
@@ -436,7 +442,7 @@
                         </div>
                         <div class="product-details">
                             <p><small>Today's Payment</small></p>
-                            <h4><strong id="ttprice">$99.99</strong></h4>
+                            <h4><strong id="ttprice">$0.00</strong></h4>
                         </div>
 
                         <button type="submit" class="btn btn-primary btn-block btn-lg">Complete Order</button>
@@ -461,13 +467,29 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary" data-dismiss="modal" data-id="0" id="addProdModalBtn">Add to Cart</button>
-                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button> -->
                 </div>
             </div>
         </div>
     </div>
 
-    <a href="#" class="goup"><i class="fas fa-chevron-circle-up"></i></a>
+    <!-- Modal Offer-->
+    <div id="ModalProdOffer">
+        <div class="panel">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col text-center">
+                        <h1>SPECIAL BLACK FRIDAY OFFER JUST FOR YOU</h1>
+                        <p>For just <strong id="diffP"></strong> more, you can get all of the trading education we offer on this page - <strong>a savings of <strong id="PorcentP">50%</strong>!</strong></p>
+
+                        <button type="button" class="btn btn-primary btn-block btn-lg"  data-id="0" id="getOfferModalBtn">Yes, I will take this offer</button>
+                        <button type="button" class="btn btn-link text-info btn-block" id="hidegetOfferModalBtn">No Thanks</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="goup"><i class="fas fa-shopping-cart"></i></a>
 
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
     <script src="js/init.fn.juanjimeneztj.js"></script>

@@ -1,5 +1,7 @@
 window.tprice = 0;
+window.diffprice = 0;
 window.currentPrice = 0;
+window.msh = 0;
 let $win = $(window), $doc = $(document), $catalog = $('.catalog-finmc .row');
 
 $(function(){

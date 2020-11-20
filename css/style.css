@@ -66,6 +66,32 @@ main {
     padding: 20px;
     padding-left: 10px; }
 
+#ModalProdOffer {
+  background: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9998; }
+  #ModalProdOffer.active {
+    display: flex; }
+  #ModalProdOffer .panel {
+    background: black;
+    color: white;
+    padding: 50px 30px;
+    max-width: 700px;
+    width: 100%; }
+    #ModalProdOffer .panel p {
+      font-size: 19px;
+      line-height: 30px; }
+    #ModalProdOffer .panel button#getOfferModalBtn {
+      font-size: 24px; }
+
 .modal-body, .modal-body p, .modal-body a, .modal-body li {
   font-size: 19px;
   line-height: 30px; }
