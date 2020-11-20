@@ -12,7 +12,10 @@ $('body').on('click','.btn-gsweb-add',function(e){
     fragment.appendChild(clone);
     $('#ProductsCart').find('tbody').append(fragment);
     cardProds();
+
+    $('form').prepend('<input type="hidden" name="'+$(this).parent().find('.title-gsweb').attr('title').replace(/ /g, "")+'" value="'+$(this).parent().find('.title-gsweb').attr('title')+'" id="'+ID+'" />');
 });
+
 $('body').on('click','.btn-gsweb-read-more',function(e){
     e.preventDefault();
     $('#ModalProdDescriptionTitle').text($(this).parent().find('.title-gsweb').text());
@@ -52,9 +55,12 @@ $('body').on('click','#addProdModalBtn',function(e){
             const clone = templateProducts.cloneNode(true);
             fragment.appendChild(clone);
             $('#ProductsCart').find('tbody').append(fragment);
+            
+            $('form').prepend('<input type="hidden" name="'+$(this).find('.btn-gsweb-add').parent().find('.title-gsweb').attr('title').replace(/ /g, "")+'" value="'+$(this).find('.btn-gsweb-add').parent().find('.title-gsweb').attr('title')+'" id="'+ID+'" />');
         }
     });
     cardProds();
+
 });
 
 $('body').on('click','.removeProductCart',function(e){
@@ -65,6 +71,7 @@ $('body').on('click','.removeProductCart',function(e){
     $('.card').each(function(ele){
         if($(this).find('.btn-gsweb-add').attr('data-id')==ID){
             $(this).find('.btn-gsweb-add').removeClass('disabled').attr('disabled',false);
+            $('form').find('#'+ID).remove();
         }
     });
 
