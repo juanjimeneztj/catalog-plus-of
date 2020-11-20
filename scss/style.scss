@@ -110,6 +110,11 @@ main{
     transition: all ease-in-out 0.4s;
     width: 60px;
     z-index: 8888;
+    @media all and (max-width:767px){
+        bottom: 20px;
+        font-size: 40px;
+        right: 0;
+    }
 }
 .goup.active{
     display: inline-block;
