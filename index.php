@@ -70,6 +70,8 @@
                 </div>
                 <div class="col-12 col-md-5 col-lg-3 bl-1">
                     <form>
+                        <input type="hidden" name="total" value="0" id="totalp">
+
                         <div class="gsweb-cart-info text-center mt-0 mb-4">
                             <button type="button" class="btn btn-outline-primary btn-block rounded-0 cart-btn" data-toggle="collapse" data-target="#ProductsCart" aria-expanded="false" aria-controls="ProductsCart">
                                 <span class="cart-art-count bg-danger rounded">0</span>
@@ -434,8 +436,7 @@
                         </div>
                         <div class="product-details">
                             <p><small>Today's Payment</small></p>
-                            <p class="text-uppercase">PRODUCT_NAME</p>
-                            <h4><strong>$99.99</strong></h4>
+                            <h4><strong id="ttprice">$99.99</strong></h4>
                         </div>
 
                         <button type="submit" class="btn btn-primary btn-block btn-lg">Complete Order</button>

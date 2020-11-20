@@ -14,6 +14,10 @@ $('body').on('click','.btn-gsweb-add',function(e){
     cardProds();
 
     $('form').prepend('<input type="hidden" name="'+$(this).parent().find('.title-gsweb').attr('title').replace(/ /g, "")+'" value="'+$(this).parent().find('.title-gsweb').attr('title')+'" id="'+ID+'" />');
+
+    window.currentPrice = (parseFloat(window.currentPrice) + parseFloat($(this).parent().find('.price-gsweb').text().replace(/ /g, "").replace(/,/g, "").replace(/\$/g, "").replace(/USD/g, "")));
+
+    allin();
 });
 
 $('body').on('click','.btn-gsweb-read-more',function(e){
@@ -57,10 +61,12 @@ $('body').on('click','#addProdModalBtn',function(e){
             $('#ProductsCart').find('tbody').append(fragment);
             
             $('form').prepend('<input type="hidden" name="'+$(this).find('.btn-gsweb-add').parent().find('.title-gsweb').attr('title').replace(/ /g, "")+'" value="'+$(this).find('.btn-gsweb-add').parent().find('.title-gsweb').attr('title')+'" id="'+ID+'" />');
+
+            window.currentPrice = (parseFloat(window.currentPrice) + parseFloat($(this).find('.btn-gsweb-add').parent().find('.price-gsweb').text().replace(/ /g, "").replace(/,/g, "").replace(/\$/g, "").replace(/USD/g, "")));
         }
     });
     cardProds();
-
+    allin();
 });
 
 $('body').on('click','.removeProductCart',function(e){
@@ -72,16 +78,39 @@ $('body').on('click','.removeProductCart',function(e){
         if($(this).find('.btn-gsweb-add').attr('data-id')==ID){
             $(this).find('.btn-gsweb-add').removeClass('disabled').attr('disabled',false);
             $('form').find('#'+ID).remove();
+            window.currentPrice = (parseFloat(window.currentPrice) - parseFloat($(this).find('.btn-gsweb-add').parent().find('.price-gsweb').text().replace(/ /g, "").replace(/,/g, "").replace(/\$/g, "").replace(/USD/g, "")));
         }
     });
 
     cardProds();
+    allin();
 });
 
 function cardProds(){
     $('.cart-art-count').text(
         $('#ProductsCart').find('tbody').children('tr').size()
     );
+}
+
+function allin(){
+    let tv = window.tprice;
+    let cp = window.currentPrice;
+    let mp = parseFloat(window.tprice)*0.50;
+    var number_format = function(total) { 
+        return total.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,'); 
+    };
+
+    if(cp>=mp){
+        console.log('mitad de precio alcanzado');
+    }
+    if(cp > 999){
+        $('#ttprice').text('$'+number_format(cp));
+    }else{
+        $('#ttprice').text('$'+number_format(cp));
+    }
+
+    $('#totalp').attr('value',cp)
+
 }
 
 $('.goup').on('click',function(){

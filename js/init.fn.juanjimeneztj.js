@@ -1,3 +1,5 @@
+window.tprice = 0;
+window.currentPrice = 0;
 let $win = $(window), $doc = $(document), $catalog = $('.catalog-finmc .row');
 
 $(function(){
@@ -11,6 +13,7 @@ function initGSWEB(){
         const templateProducts = document.querySelector('#template-product').content;
 
         $response.forEach(element => {
+            window.tprice = parseFloat(window.tprice) + parseFloat(element.actual_price.replace(/,/g, ""));
             if($win.width() > 1601){
                 if(element.product_name.length > 35){
                     $name = element.product_name.substr(0,35)+'...';
