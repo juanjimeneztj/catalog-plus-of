@@ -89,7 +89,7 @@
                                                     <tr>
                                                         <th scope="row" class="name text-left">1</th>
                                                         <td class="opt text-right">
-                                                            <a href="javascript:void(0)" class="btn btn-sm btn-danger removeProductCart">X</a>
+                                                            <a href="javascript:void(0)" class="btn btn-sm btn-danger removeProductCart"><i class="fas fa-times"></i></a>
                                                         </td>
                                                     </tr>
                                                 </template>
@@ -464,6 +464,8 @@
             </div>
         </div>
     </div>
+
+    <a href="#" class="goup"><i class="fas fa-chevron-circle-up"></i></a>
 
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
     <script src="js/init.fn.juanjimeneztj.js"></script>

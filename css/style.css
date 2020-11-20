@@ -68,6 +68,24 @@ main {
   font-size: 19px;
   line-height: 30px; }
 
+.goup {
+  bottom: 50px;
+  color: #41AD49;
+  display: none;
+  font-size: 50px;
+  height: 60px;
+  opacity: 0;
+  position: fixed;
+  right: 50px;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+  width: 60px;
+  z-index: 8888; }
+
+.goup.active {
+  display: inline-block;
+  opacity: 1; }
+
 .ribbon-wrapper-red {
   width: 145px;
   height: 138px;

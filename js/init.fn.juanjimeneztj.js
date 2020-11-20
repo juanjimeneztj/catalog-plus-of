@@ -30,9 +30,18 @@ function initGSWEB(){
                 templateProducts.querySelector('.ribbon-wrapper-red').classList.remove('d-none');
                 templateProducts.querySelector('.ribbon-wrapper-red .ribbon-red').textContent = element.label;
             }
+            if(element.image == 'images/Roadmap_TraderRoom_Combo.png' || element.image == 'images/TBB.png' || element.image == 'images/TBUZ_TSPY_COMBO.png' || element.image == 'images/EOT.png'){
+                templateProducts.querySelector('img').style.maxWidth = '350px';
+            }else{
+                templateProducts.querySelector('img').style.maxWidth = '200px';
+            }
             templateProducts.querySelector('img').setAttribute('src',element.image);
             templateProducts.querySelector('img').setAttribute('alt',element.product_name);
-            templateProducts.querySelector('.title-gsweb').setAttribute('title',element.product_name);
+            if(element.label == ''){
+                templateProducts.querySelector('.title-gsweb').setAttribute('title',element.product_name);
+            }else{
+                templateProducts.querySelector('.title-gsweb').setAttribute('title',element.product_name+' - '+element.label);
+            }
             templateProducts.querySelector('.title-gsweb strong').innerHTML = $name;
             templateProducts.querySelector('.price-gsweb').textContent = '$'+element.actual_price+' USD';
             templateProducts.querySelector('.description-gsweb').innerHTML = element.description;

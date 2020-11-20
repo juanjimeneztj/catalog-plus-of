@@ -5,7 +5,7 @@ $('body').on('click','.btn-gsweb-add',function(e){
     const fragment = document.createDocumentFragment();
     const templateProducts = document.querySelector('#template-tableProducts').content;
 
-    templateProducts.querySelector('.name').textContent = $(this).parent().find('.title-gsweb').children().text();
+    templateProducts.querySelector('.name').textContent = $(this).parent().find('.title-gsweb').attr('title');
     templateProducts.querySelector('a').setAttribute('data-id',ID);
 
     const clone = templateProducts.cloneNode(true);
@@ -46,7 +46,7 @@ $('body').on('click','#addProdModalBtn',function(e){
             const fragment = document.createDocumentFragment();
             const templateProducts = document.querySelector('#template-tableProducts').content;
 
-            templateProducts.querySelector('.name').textContent = $(this).find('.btn-gsweb-add').parent().find('.title-gsweb').children().text();
+            templateProducts.querySelector('.name').textContent = $(this).find('.btn-gsweb-add').parent().find('.title-gsweb').attr('title');
             templateProducts.querySelector('a').setAttribute('data-id',ID);
 
             const clone = templateProducts.cloneNode(true);
@@ -76,3 +76,17 @@ function cardProds(){
         $('#ProductsCart').find('tbody').children('tr').size()
     );
 }
+
+$('.goup').on('click',function(){
+    $("html, body").animate({ scrollTop: 0 }, 600);
+    return false;
+});
+
+$(window).on('scroll',function() {
+    let scroll = $(window).scrollTop(), mrk = ($('form').scrollTop() + $('form').height());
+    if(scroll > mrk) {
+        $('.goup').addClass('active');
+    } else {
+        $('.goup').removeClass('active');
+    }
+});
