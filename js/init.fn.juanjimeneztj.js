@@ -35,8 +35,10 @@ function initGSWEB(){
                 templateProducts.querySelector('.ribbon-wrapper-red').classList.remove('d-none');
                 templateProducts.querySelector('.ribbon-wrapper-red .ribbon-red').textContent = element.label;
             }
-            if(element.image == 'images/Roadmap_TraderRoom_Combo.png' || element.image == 'images/TBB.png' || element.image == 'images/TBUZ_TSPY_COMBO.png' || element.image == 'images/EOT.png'){
+            if(element.image == 'images/Roadmap_TraderRoom_Combo.png' || element.image == 'images/TBB.png' || element.image == 'images/TBUZ_TSPY_COMBO.png'){
                 templateProducts.querySelector('img').style.maxWidth = '350px';
+            }else if(element.image == 'images/EOT.png'){
+                templateProducts.querySelector('img').style.maxWidth = '310px';
             }else{
                 templateProducts.querySelector('img').style.maxWidth = '200px';
             }
