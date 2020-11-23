@@ -438,23 +438,6 @@
         </div>
     </div>
 
-    <!-- Modal Offer-->
-    <div id="ModalProdOffer">
-        <div class="panel">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col text-center">
-                        <h1>SPECIAL BLACK FRIDAY OFFER JUST FOR YOU</h1>
-                        <p>For just <strong id="diffP"></strong> more, you can get all of the trading education we offer on this page - <strong>a savings of <strong id="PorcentP">50%</strong>!</strong></p>
-
-                        <button type="button" class="btn btn-primary btn-block btn-lg"  data-id="0" id="getOfferModalBtn">Yes, I will take this offer</button>
-                        <button type="button" class="btn btn-link text-info btn-block" id="hidegetOfferModalBtn">No Thanks</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <a href="#" class="goup"><i class="fas fa-shopping-cart"></i></a>
 
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
