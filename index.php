@@ -70,6 +70,7 @@
                 </div>
                 <div class="col-12 col-md-5 col-lg-3 bl-1">
                     <form>
+                        <input type="hidden" name="productId" value="" id="productID">
                         <input type="hidden" name="total" value="0" id="totalp">
 
                         <p class="mt-1"><strong>Contact Information</strong></p>
@@ -406,7 +407,7 @@
                         </div>
                         <div class="product-details">
                             <p><small>Today's Payment</small></p>
-                            <h4><strong id="productName">Product_name</strong></h4>
+                            <p class="mb-0"><strong id="productName">Empty</strong></p>
                             <h4><strong id="ttprice">$0.00</strong></h4>
                         </div>
 
