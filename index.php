@@ -72,42 +72,6 @@
                     <form>
                         <input type="hidden" name="total" value="0" id="totalp">
 
-                        <div class="gsweb-cart-info text-center mt-0 mb-4">
-                            <button type="button" class="btn btn-outline-primary btn-block rounded-0 cart-btn" data-toggle="collapse" data-target="#ProductsCart" aria-expanded="false" aria-controls="ProductsCart">
-                                <span class="cart-art-count bg-danger rounded">0</span>
-                                <i class="fas fa-shopping-cart"></i> CART
-                            </button>
-                            <div class="collapse" id="ProductsCart">
-                                <div class="card card-body">
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col" class="text-left"><em>Name</em></th>
-                                                    <th scope="col">*</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <template id="template-tableProducts">
-                                                    <tr>
-                                                        <th scope="row" class="name text-left">1</th>
-                                                        <td class="opt text-right">
-                                                            <a href="javascript:void(0)" class="btn btn-sm btn-danger removeProductCart"><i class="fas fa-times"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                </template>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                            <template id="template-offer">
-                                <div class="gsweb-special-offer mt-3">
-                                    <h5><strong><em>For only <span class="priceDisc">$0.00</span> more you can get ALL DTI trading education - <span class="text-danger">a </span><span class="priceTotal text-danger">$0.00</span><span class="text-danger"> value!</span></em></strong></h5>
-                                    <a href="javascript:void(0)">CLICK HERE TO TAKE THIS SPECIAL OFFER</a>
-                                </div>
-                            </template>
-                        </div>
                         <p class="mt-1"><strong>Contact Information</strong></p>
 
                         <div class="form-group">
@@ -442,6 +406,7 @@
                         </div>
                         <div class="product-details">
                             <p><small>Today's Payment</small></p>
+                            <h4><strong id="productName">Product_name</strong></h4>
                             <h4><strong id="ttprice">$0.00</strong></h4>
                         </div>
 
